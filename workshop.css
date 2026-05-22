@@ -12,21 +12,22 @@ body, *, *:before, *:after{
 html, body{
   font-family: "Quicksand", "Josefin Slab";
   font-size: 16px;
-  color: black;
+  color: #000000;
 }
 
 
 a{
   text-decoration: none;
-  color: inherit;
-  font-weight: 400;
+  color: #666;
+  font-weight: 450;
 }
 
 
 h1, h2, h3, h4, h5, h6, .title{
   text-transform: uppercase;
   display: block;
-  font-weight: 300;
+  text-align: center;
+  font-weight: 500;
   margin: 0 0 0.8em;
 }
 
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6, .title{
 }
 
 .data-block{
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
 }
 
 .fixed-width{
@@ -284,6 +285,7 @@ p{
 
 .portfolio{
   position: relative;
+  margin-bottom: 3em;
 }
 
 .portfolio:before{
@@ -310,8 +312,13 @@ p{
 }
 
 .work{
-  width: 40%;
-  margin-right: 10%;
+  width: 46.25%;
+  margin: 0 2.5%;
+  float: left;
+}
+
+.work:nth-child(even){
+  margin-left: 0;
 }
 
 .work img{
